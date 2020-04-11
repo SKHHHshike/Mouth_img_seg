@@ -2,7 +2,6 @@ from . import pspnet
 from . import unet
 from . import segnet
 from . import fcn
-from . import resnet
 model_from_name = {}
 
 
@@ -42,5 +41,3 @@ model_from_name["segnet"] = segnet.segnet
 model_from_name["vgg_segnet"] = segnet.vgg_segnet
 model_from_name["resnet50_segnet"] = segnet.resnet50_segnet
 model_from_name["mobilenet_segnet"] = segnet.mobilenet_segnet
-
-model_from_name['rf_lw'] = resnet.rf_lw
