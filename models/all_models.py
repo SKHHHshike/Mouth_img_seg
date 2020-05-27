@@ -2,6 +2,8 @@ from . import pspnet
 from . import unet
 from . import segnet
 from . import fcn
+from . import refinenet
+from . import lw_refinet
 model_from_name = {}
 
 
@@ -41,3 +43,7 @@ model_from_name["segnet"] = segnet.segnet
 model_from_name["vgg_segnet"] = segnet.vgg_segnet
 model_from_name["resnet50_segnet"] = segnet.resnet50_segnet
 model_from_name["mobilenet_segnet"] = segnet.mobilenet_segnet
+
+model_from_name["refinenet_resnet50"] = refinenet.refinenet_resnet50
+model_from_name["refinenet_mini"] = refinenet.refinenet_mini
+model_from_name["lw_refinenet_mini"] = lw_refinet.lw_refinenet_mini
